@@ -23,6 +23,7 @@ function handleSubmit(event) {
         .then(function (res) {
             document.getElementById('polarity').innerHTML = res.polarity
             document.getElementById('subjectivity').innerHTML = res.subjectivity
+            document.getElementById('irony').innerHTML = res.irony
         })
 }
 

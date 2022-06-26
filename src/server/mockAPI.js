@@ -1,5 +1,6 @@
 let json = {
     polarity: 'positive',
-    subjectivity: 'subjective'
+    subjectivity: 'subjective',
+    irony: 'ironic'
 }
 module.exports = json
