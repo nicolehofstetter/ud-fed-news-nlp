@@ -1,6 +1,4 @@
 function validateUrl(inputUrl) {
-    console.log('::: Running validateUrl :::', inputUrl);
-
     const valid = /^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\(\)\*\+,;=.]+$/.test(inputUrl);
 
     if(!valid) {
