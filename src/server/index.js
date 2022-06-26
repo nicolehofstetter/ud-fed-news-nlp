@@ -28,7 +28,10 @@ app.listen(8081, function () {
     console.log('Example app listening on port 8081!')
 })
 
-app.get('/test', function (req, res) {
+app.post('/classify', function (req, res) {
+    let inputText = req.body.text;
+    console.log("here is a classification needed , input text: " + inputText)
+
     res.send(mockAPIResponse)
 })
 
