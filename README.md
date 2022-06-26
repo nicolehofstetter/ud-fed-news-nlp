@@ -22,6 +22,12 @@ or build it for production:
 npm run build-prod
 ```
 
+## Installation
+
+```bash 
+npm i --legacy-peer-deps
+```
+
 ##Dependencies
 
 All dependencies can be found in package.json. For text processing the following API is used: [MeaningCloud Api](https://learn.meaningcloud.com/developer/sentiment-analysis/2.1/doc/response)
