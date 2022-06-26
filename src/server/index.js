@@ -31,19 +31,19 @@ app.listen(8081, function () {
 });
 
 app.post('/classify', async function (req, res) {
-    let inputText = req.body.text;
+    let inputText = req.body.url;
     let responseObject = await postSentimentApi(inputText);
     res.send(responseObject);
 });
 
 
-async function postSentimentApi(text) {
+async function postSentimentApi(url) {
     let apiKey = process.env.API_KEY;
 
     let formData = new FormData();
     formData.append('key', apiKey);
     formData.append('lang', 'en');
-    formData.append('txt', text);
+    formData.append('url', url);
 
     return await fetch('https://api.meaningcloud.com/sentiment-2.1', {
         method: 'POST',
