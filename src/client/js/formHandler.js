@@ -3,11 +3,9 @@ function handleSubmit(event) {
 
     // check what text was put into the form field
     let url = document.getElementById('url').value;
-    if (! Client.validateUrl(url)) {
+    if (!Client.validateUrl(url)) {
         return;
     }
-
-
 
     let requestBody = {
         url: url
