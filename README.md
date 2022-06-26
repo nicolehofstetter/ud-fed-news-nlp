@@ -4,22 +4,27 @@ This repo includes a project of the udacity course : Frontend Web Developer Nano
 
 ## Getting started
 
-You can run the website in dev mode:
-
-```bash
-npm start
-```
-
 Start server:
 
 ```bash
 npm start-server
 ```
 
-or build it for production:
+You can run the website in dev mode:
+
+```bash
+npm run build-dev
+```
+
+Build it for production:
 
 ```bash
 npm run build-prod
+```
+
+Test:
+```bash
+npm run test
 ```
 
 ## Installation
